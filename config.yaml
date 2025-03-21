@@ -1,0 +1,18 @@
+# plugins/commerce-go/config.yaml
+name: commerce-go
+description: A Experimental Commerce Plugin written in Go
+service_name: commerce-go
+
+
+url_prefix: go
+
+use_features:
+  deployment:
+    - docker
+  proxy:
+    - traefik
+    
+
+routes:
+  unprotected:
+    - plugin

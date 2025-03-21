@@ -1,0 +1,7 @@
+#Do not remove or change Name:
+name: cyanstack
+services:
+  commerce-go:
+    build: .
+    ports:
+    - "${PORT:-3000}:8001"
